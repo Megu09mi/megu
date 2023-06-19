@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+                                                                                                                                                                                                                                                                                                                                                              
+<head>
+    <meta charset="utf-8">
+    <title>株式会社三嘉ホーム採用ホームページ</title>
+    <meta name="description" content="株式会社三嘉ホームの採用ホームページです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="header-left">
+      <div class="title-logo">
+          <a href="index.html"><img src="images/IMG_0001.JPG"></a>
+      </div>
+      <h1>株式会社三嘉ホーム<br>採用サイト</h1>
+    </div>
+
+      
+    <nav>
+      <ul>
+        <li><a href="#about">三嘉ホームについて</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#vision">Vsion</a></li>
+        <li><a href="#human">求める人材</a></li>
+        <li><a href="#recruitment">募集要項</a></li>
+      </ul>
+      <div class="contact-btn">
+        <a href="#">Entry</a>
+      </div>
+    </nav>
+    <div class="humbarger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="mask"></div>
+  </header>
+  <main>
+    <div class="entry-visiual">
+      <h1 class="entry-titile">応募フォーム</h1>
+    </div>
+
+    <section id="selection-flow">
+      <h1 class="flow-titile">採用までの流れ</h1>
+      <ul class="flow">
+        <li>
+          <p class="flow-step">エントリー</p>
+        </li>
+        <li>
+          <p class="flow-step">一次面接</p>
+        </li>
+        <li>
+          <p class="flow-step">最終面接</p>
+        </li>
+        <li>
+          <p>内定</p>
+        </li>
+      </ul>
+    </section>
+    <section id="entry-form">
+      <h1 class="entry-form-title">エントリー情報の入力</h1>
+      <form action method="post">
+      <dl class="form-list">
+        <dt>
+          <label for="name">お名前<span>【必須】</span></label>
+        </dt>
+        <dd>
+          <input type="text" name="name" id="name" value tabindex="1" required>
+        </dd>
+        <dt>
+          <label for="kana">ふりがな<span>【必須】</span></label>
+        </dt>
+        <dd>
+          <input type="text" name="kana" id="kana" value tabindex="2" required>
+        </dd>
+        <dt>
+          <label for="company">性別<span>【必須】</span></label>
+        </dt>
+        <dd>
+          <ul class="radio">
+            <li class="radio-btn">
+              <input type="radio" name="sex" id="sex1" value="men" tabindex="3" required>
+              <label for="sex1">男性</label>
+            </li>
+            <li class="radio-btn">
+              <input type="radio" name="sex" id="sex2" value="women" tabindex="4" required>
+              <label for="sex2">女性</label>
+            </li>
+            <li class="radio-btn">
+              <input type="radio" name="sex" id="sex3" value="others" tabindex="5" required>
+              <label for="sex3">その他</label>
+            </li>
+          </ul>
+        </dd>
+        <dt>
+          <label for="birthday-year">生年月日<span>【必須】</span></label>
+        </dt>
+        <dd>
+          <ul class="birthday">
+            <li><input type="text" name="birthday-year" id="birthday-year" value tabindex="6">年</li>
+            <li>
+              <div class="select-box">
+                <select name="birthday-month" class="birthday-month" tabindex="7" required>
+                  <option>月を選択</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              月
+            </li>
+              <li>
+                <div class="select-box">
+                  <select name="birthday-date" class="birthday-date" tabindex="8" required>
+                    <option>日を選択</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select>
+                </div>
+                日
+              </li>
+          </ul>
+        </dd>
+        <dt>
+          <label for="zip">ご住所<span>【必須】</span></label>
+        </dt>
+        <dd>
+          <ul>
+            <li>〒<input type="text" name="zip" id="zip" value tabindex="9" required></li>
+            <li><input type="text" name="address" id="address" value tbindex="10" required></li>
+          </ul>
+        </dd>
+        <dt>
+          <label for="tel">お電話番号<span>【必須】</span></label>
+        </dt>
+        <dd>
+          <input type="text" name="tel" id="tel" value tbindex="11" required>
+        </dd>
+        <dt>
+          <label for="mail">メールアドレス<span>【必須】</span></label>
+        </dt>
+        <dd>
+          <input type="text" name="mail" id="mail"
+           value pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:/.[a-zA-Z0-9]+)*$"
+           tabindex="12" required>
+        </dd>
+        <dt>
+          <label for="school">卒業学校名</label>
+        </dt>
+        <dd>
+          <input type="text" name="school" id="school" value tbindex="13" required>
+        </dd>
+        <dt>
+          <label for="faculty">卒業学部・学科</label>
+        </dt>
+        <dd>
+          <input type="text" name="faculty" id="faculty" value tbindex="14" required>
+        </dd>
+        <dt>
+          <label for="inquiry">お問い合わせ内容</label>
+        </dt>
+        <dd>
+          <textarea name="inquiry" id="inquiry" tabindex="15" size="100"></textarea>
+        </dd>
+      </dl>
+      </form>
+    </section>
+    <section id="consent-form">
+      <h3 class="consent-form-title">
+        個人情報保護に関する同意事項
+      </h3>
+      <div class="privacy-wrap">
+        <h3 class="privacy-title">プライバシーポリシー</h3>
+        <dl class="privacy-list">
+          <dt>個人情報の取り扱い</dt>
+          <dd>
+            三嘉ホームウェブサイト(以下当ウェブサイトといいます)より、問い合わせの際に送信いただきます個人情報（住所、氏名、電話番号、メールアドレス）につきまして、
+            適切かつ安全な管理を行います。それらの情報は厳重に保管し、データの漏洩・改竄が起こらないようその保護に努めます。
+            個人情報の保護について最大限の注意を払い適切な管理・対策を行い、その保護に努めます。
+          </dd>
+          <dt>個人情報の利用目的</dt>
+          <dd>
+            当社は、事業を行うことに伴い、事業遂行上必要となる個人情報を取得しますが、これらの個人情報は、下記の目的で利用させていただきます。
+            <ol>
+              <li>当社のサービスに対するご請求、お支払いとその確認</li>
+              <li>電子メールのお問い合わせに対する確認と返答</li>
+              <li>当社事業における市場調査</li>
+              <li>顧客利用履歴等の確認</li>
+              <li>その他、当社に伴う業務の実施</li>
+            </ol>
+          </dd>
+          <dt>個人情報の開示について</dt>
+          <dd>
+            当社は、個人情報を外部に公表、開示することはありません。ただし、裁判所や警察等の公的機関から法律に基づく正式な照会を受けた場合、
+            もしくは、当団体・事務所の権利・サービスを保護する場合、第三者の権利・財産・名誉が不当に侵害された場合、公的秩序に反する場合には、その情報をその当該第三者や警察・公共機関または関連諸機関に通知することがあります。
+          </dd>
+        </dl>
+      </div>
+      <div class="form-check-box">
+        <input type="checkbox" name="check" id="check" tabindex="16" required>
+        <label for="check">プライバシーポリシーについて同意の上送信します</label>
+      </div>
+    </section>
+    <div class="btn">
+      <button type="submit" name="submitbtn" class="submitbtn" tabindex="17">
+        送信する
+      </button>
+      
+    </div>
+    
+
+
+
+
+  </main>
+  <footer>
+    <div class="footer-wrapper container">
+      <h5><a href="index.html">MIYOSHI HOME<br>
+          RECRUIT</a></h5>
+      <div class="footer-menu">
+        <ul>
+          <li><a href="#about">三嘉ホームについて</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#human">求める人材</a></li>
+          <li><a href="#recruitment">募集要項</a></li>
+        </ul>
+      </div>
+      <div class="line">
+        <a href="lin.ee/T6fUJfw">
+          <div class="line-wrap">
+            <p class="line-wrap-title">LINEでお問い合わせ</p>
+            <p class="line-wrap-text">LINEでの採用のお問い合わせはこちら</p>
+          </div>
+        </a>
+      </div>
+      <div class="sns">
+        <a href="https://www.instagram.com/miyoshi_home/">
+          <img src="images/insta.png">
+        </a>
+      </div>
+      <p class="copyright">&copy;MIYOSHI HOME 2023</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+  <!--IE11用※対応しなければ削除してください-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script><!--不必要なら削除-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script><!--不必要なら削除-->
+  <!--slickの読込-->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!--自作のjsファイル-->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
