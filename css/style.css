@@ -437,7 +437,7 @@ a {
     top: 50%;
     right: -20px;
     width: 40px;
-    height: 1.2px;
+    height: 2px;
     background-color: black;
     transition: all 1s linear;
   }
@@ -447,8 +447,8 @@ a {
     position: absolute;
     top: 20%;
     right: -13px;
-    width: 1.5px;
-    height: 13px;
+    width: 2.3px;
+    height: 14px;
     transform: skewX(45deg);
     background-color: black;
     transition: all 1s linear;
@@ -1329,6 +1329,11 @@ form.html エントリーページ
 @media (max-width:980px) {
 
   /*ヘッダー----------------------------*/
+
+  header {
+    height: 80px;
+  }
+
    nav {
     flex-direction: column;
     width: 300px;
@@ -1459,12 +1464,26 @@ nav li {
 
 
   /*メインビジュアル-----------------*/
+  .main-visiual img {
+    height: 60vh;
+  }
+
+  .main-visiual {
+    position: relative;
+  }
+
+  .main-visiual-text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+  }
+
   .main-visiual-text h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .main-visiual-text p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   /*メッセージ----------------------*/
@@ -1477,18 +1496,26 @@ nav li {
     width: 100%;
   }
 
+  .message-img::after {
+    box-shadow: 4px 4px rgb(6, 22, 248);
+  }
+
   .message-text {
     width: 100%;
-    padding-left: 25px;
+    margin: 0 auto;
   }
   
   .message-text h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
    
   }
 
   .message-text p {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
+  }
+
+  .second-img::after {
+    box-shadow: 4px 4px rgb(6, 22, 248);
   }
 
   .second-text {
@@ -1496,12 +1523,12 @@ nav li {
   }
 
   .second-text h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-left: 0;
   }
 
   .second-text p {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     margin-left: 0;
   }
 
@@ -1518,6 +1545,10 @@ nav li {
     margin-right: 0;
   }
 
+  .about-img::after {
+    box-shadow: 4px 4px rgb(6, 22, 248);
+  }
+
   .about-text {
     width: 100%;
     margin-left: 0;
@@ -1525,12 +1556,12 @@ nav li {
   }
 
   .about-text h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: left;
   }
 
   .about-text p {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     text-align: left;
   }
  /*-------------------------------------
@@ -1616,10 +1647,17 @@ nav li {
 
   .human-img {
     height: 20vh;
+    background-attachment: scroll;
    }
 
    .human-title {
     font-size: 1.5rem
+   }
+
+   .human-title::before,
+   .human-title::after {
+    width: 20%;
+   
    }
 
    .human-list {
@@ -1652,17 +1690,11 @@ nav li {
    }
 
    .recruitment-title {
-    font-size: 1.8rem;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
+    font-size: 1.5rem;
    }
    .recruitment-title::before,
    .recruitment-title::after {
-    content: "";
-    width: 30%;
-    border-top: 2px solid black;
+    width: 20%;
    }
 
 
@@ -1689,19 +1721,26 @@ nav li {
     width: 100%;
    }
    .recruitment-wrapper dl dt {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     line-height: 50px;
    }
 
    .recruitment-wrapper dl dd {
-    font-size: 1rem;
+    font-size: 0.8rem;
    }
 /*フッター---------------------------------*/
+   footer {
+    padding: 60px 15px 15px 15px;
+   }
+
+   .footer-menu ul {
+    justify-content: space-between;
+   }
 
    .footer-menu li {
-    font-size: 0.3rem;
-    margin-right: 3px;
+    font-size: 0.5rem;
+    margin-right: 0px;
   }
   
   
@@ -1727,6 +1766,11 @@ form.html エントリーページ
 
 /*entryタイトル--------------------*/
 
+.entry-titile {
+  font-size: 1.8rem;
+  left: 25px;
+}
+
 #selection-flow {
   padding: 100px 25px;
 }
@@ -1736,7 +1780,7 @@ form.html エントリーページ
 }
 
 .flow-titile {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .flow li {
@@ -1755,12 +1799,10 @@ form.html エントリーページ
 }
 
 .flow-step::after {
-  content:"";
-  position: absolute;
   border: 18px solid transparent;
   border-top: 20px solid blue;
-  top: 60px;
-  right: 45%;
+  top: 62px;
+  right: 40%;
 }
 
 #entry-form {
@@ -1790,18 +1832,74 @@ form.html エントリーページ
   margin-right: 0px;
 }
 
+/*性別--------------------------*/
+
+
+.radio-btn label {
+  font-size: 0.8rem;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 45px;
+  align-items: center;
+}
+
+.radio-btn label::before {
+  width: 12px;
+  height:12px;
+  top: 10px;
+}
+
+.radio-btn label::after {
+  width: 6px;
+  height: 6px;
+  left: 3px;
+  top: 10px;
+}
+
 /*個人情報取り扱いについて-----------------*/
 
 #consent-form {
   padding: 100px 25px;
 }
 
+.consent-form-title {
+  font-size: 1.2rem;
+}
+
+.form-list {
+  margin: 65px 0;
+}
+
+.form-list input {
+  height: 30px; 
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.form-list label {
+  font-size: 1rem;
+}
+
+.birthday-month {
+  padding: 0 10px;
+  height: 30px;
+}
+
+.birthday-date {
+  padding: 0 10px;
+  height: 30px;
+}
+#inquiry {
+  padding: 0 10px;
+}
+
+
 .privacy-wrap {
-  margin: 25px;
+  margin: 15px;
 }
 
 .form-check-box {
-  width: 60%; 
+  width: 100%; 
 }
 
 
